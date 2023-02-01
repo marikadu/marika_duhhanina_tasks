@@ -26,7 +26,7 @@ echo "My name is \"David\"";
 <h1>3.3 Current date.</h1>
 <?php echo date("d.m.y")?>
 
-<?php // 3.4?>
+<?php // 3.43423432?>
 <?php $title = "PHP is interesting"?>
 <h1>3.4 <?php echo $title?> </h>
 

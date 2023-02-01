@@ -21,9 +21,11 @@ echo "Hello World!<br>";
 echo "My name is \"David\"";
 ?>
 
-<h1>3.3 Current date. </h1>
+<h1>3.3 Current date.</h1>
 
 <?php echo date("d.m.y")?>
+
+<h1>  </h>
 
 </body>
 </html>

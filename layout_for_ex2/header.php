@@ -21,7 +21,7 @@
   
           <ul class="horizontal-list">
             <li><a id="Tops" href="tops.php">Tops</a></li>
-            <li><a id="Sale" href="sale.php">Sale</a></li>
+            <li><a id="Sale" href="ex1.php">Exercise 1</a></li>
           </ul>
         </div>
 

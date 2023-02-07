@@ -30,6 +30,18 @@
               <div class="container">
                 <div class="row">
                   <p class="pull-left">Copyright © 2023 Cecile. All rights reserved.</p>
+                  
+                  
+<?php
+// outputs e.g.  somefile.txt was last modified: December 29 2002 22:16:23.
+
+$filename = 'variable.php';
+if (file_exists($filename)) {
+    echo "$filename was last modified: " . date ("F d Y H:i:s.", filemtime($filename));
+}
+?>
+
+
                   <p> <img src="images/logo.png" alt="logo2"></p>
               </div>
             </div>

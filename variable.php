@@ -96,4 +96,39 @@ include "header.php"?>
 <h2>6. Write a PHP script to detect the browser being used to view your pages. <br>
      (Use predefined variables: $_SERVER). </h2>
 
+     <?php
+
+ function getBrowser()
+ {
+   $user_agent = $_SERVER['HTTP_USER_AGENT'];
+   $browser = "N/A";
+
+   $browsers = [
+     '/msie/i' => 'Internet explorer',
+     '/firefox/i' => 'Firefox',
+     '/safari/i' => 'Safari',
+     '/chrome/i' => 'Chrome',
+     '/edge/i' => 'Edge',
+     '/opera/i' => 'Opera',
+     '/mobile/i' => 'Mobile browser',
+   ];
+
+   foreach ($browsers as $regex => $value) {
+     if (preg_match($regex, $user_agent)) {
+       $browser = $value;
+     }
+   }
+
+   return $browser;
+ }
+
+ echo "Browser: " . getBrowser();
+
+?>
+
+     <h2>7. Write a PHP script in the footer section of your universal footer just below the Copyright information to <br>
+        display the last modification time of a file. <br>
+        (Hint: Use predefined variable $_SERVER, basename function  to get the filename , <br>
+        filetime function to get the last modified time & date function to print the date and time) </h2>
+
 <?php include "footer.php"; ?>

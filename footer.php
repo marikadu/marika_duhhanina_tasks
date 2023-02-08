@@ -32,8 +32,10 @@
                   <p class="pull-left">Copyright © 2023 Cecile. All rights reserved.</p>
                   
                   
-<?php $filename = 'variable.php';
-    echo "$filename was last modified: " . date ("F d Y H:i:s.", filemtime($filename));
+<?php
+$filename = basename($_SERVER['PHP_SELF']);
+$last_modified = filemtime($filename);
+    echo "Last modified on: " . date ('l jS \o\f F Y, h:i:s A', $last_modified);
 ?>
 
 

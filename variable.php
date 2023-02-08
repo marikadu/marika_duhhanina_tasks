@@ -1,5 +1,5 @@
 <?php
-$title = "Exercise 3";
+$title = "Task 3";
 include "header.php"?>
 
 <h1>In-class Task Variable & Operators 07.02.2023 (variable.php)</h1>

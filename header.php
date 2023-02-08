@@ -21,8 +21,9 @@
   
           <ul class="horizontal-list">
             <li><a id="Tops" href="tops.php">Tops</a></li>
-            <li><a id="Sale" href="ex1.php">Exercise 1</a></li>
-            <li><a id="Sale" href="variable.php">Exercise 2</a></li>
+            <li><a id="Task1" href="ex1.php">Task 1</a></li>
+            <li><a id="Task3" href="variable.php">Task 3</a></li>
+            <li><a id="Task4" href="controlflow.php">Task 4</a></li>
           </ul>
         </div>
 

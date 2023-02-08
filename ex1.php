@@ -1,3 +1,7 @@
+<?php
+$title = "Task 1";
+include "header.php"?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -70,6 +74,8 @@ echo "<table>
 <?php // 4?>
 <h1>4 Screenshot</h1>
 <img src="docker.png">
+
+<?php include "footer.php"; ?>
 
 </body>
 </html>

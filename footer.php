@@ -32,9 +32,7 @@
                   <p class="pull-left">Copyright © 2023 Cecile. All rights reserved.</p>
                   
                   
-<?php
-
-$filename = 'variable.php';
+<?php $filename = 'variable.php';
     echo "$filename was last modified: " . date ("F d Y H:i:s.", filemtime($filename));
 ?>
 

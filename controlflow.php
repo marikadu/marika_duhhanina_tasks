@@ -57,7 +57,7 @@ $d = date("F");
         echo "Fail";}
     ?>
 
-<h2>Write a program to get inputs (age and name) from the user and based on their age, <br>
+<h2>4. Write a program to get inputs (age and name) from the user and based on their age, <br>
     decide if he/she is eligible for voting. <br>
     (18 or more than 18 years is eligible for voting,) <br></h2>
 

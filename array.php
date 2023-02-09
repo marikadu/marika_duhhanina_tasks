@@ -6,6 +6,7 @@ include "header.php"?>
 
 <h2>1. Write a php script to display courses as list. Use &lt;li&gt; </h2>
 
+
 <?php
 $courses=array("PHP", "HTML", "JavaScript", "CMS", "Project")
 ?>
@@ -15,6 +16,44 @@ $courses=array("PHP", "HTML", "JavaScript", "CMS", "Project")
 The var_dump() function is used to dump information about a variable. <br>
 array_values() is an inbuilt function that <br>
 returns all the values of an array and not the keys.</h2>
+
+
+<form action="" method="get">
+<input type="number" placeholder="Enter your first number" name="num1" required>
+<input type="number" placeholder="Enter your second number" name="num2" required>
+<select name="operator">
+    <option value="add">Add</option>
+    <option value="subtact">Subtract</option>
+    <option value="multiply">Multiply</option>
+    <option value="devide">Devide</option>
+</select>
+<input type="submit" name="cal" value="Calculate">
+</form>
+
+<?php
+if (isset($_get["cal"])) {
+    $num1 = $_get["num1"];
+    $num2 = $_get["num2"];
+
+    $add = "add";
+    $subtact = "subtact";
+    $multiply = "multiply";
+    $devile = "devide";
+
+    $sum_add = $num1 + $num2;
+    echo ($sum_add);
+
+    $sum_subtract = $num1 - $num2;
+    echo ($sum_subract);
+
+    $sum_multiply = $num1 * $num2;
+    echo ($sum_multiply);
+
+    $sum_devide = $num1 / $num2;
+    echo ($sum_devide);
+}
+?>
+
 
 <h2>3. Delete an element from the array below:</h2>
 <p>$courses1=array("PHP", "HTML", "JavaScript", "CMS", "Project");<br>

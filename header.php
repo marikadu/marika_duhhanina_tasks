@@ -24,6 +24,7 @@
             <li><a id="Task1" href="ex1.php">Task 1</a></li>
             <li><a id="Task3" href="variable.php">Task 3</a></li>
             <li><a id="Task4" href="controlflow.php">Task 4</a></li>
+            <li><a id="Task5" href="array.php">Task 5</a></li>
           </ul>
         </div>
 

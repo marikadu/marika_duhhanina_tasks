@@ -31,26 +31,36 @@ returns all the values of an array and not the keys.</h2>
 </form>
 
 <?php
-if (isset($_get["cal"])) {
-    $num1 = $_get["num1"];
-    $num2 = $_get["num2"];
+if (isset($_GET["cal"])) {
+    $num1 = $_GET["num1"];
+    $num2 = $_GET["num2"];
 
-    $add = "add";
-    $subtact = "subtact";
-    $multiply = "multiply";
-    $devile = "devide";
+    $operator = $_GET["operator"];
 
-    $sum_add = $num1 + $num2;
-    echo ($sum_add);
+    switch($operator){
+        case "add":
+        $result = $num1 + $num2;
+        break;
 
-    $sum_subtract = $num1 - $num2;
-    echo ($sum_subract);
+        case "subtact":
+        $result = $num1 - $num2;
+        break;
 
-    $sum_multiply = $num1 * $num2;
-    echo ($sum_multiply);
+        case "multiply":
+        $result = $num1 * $num2;
+        break;
 
-    $sum_devide = $num1 / $num2;
-    echo ($sum_devide);
+        case "devide":
+        $result = $num1 / $num2;
+        break;
+
+        default:
+            $result = "Error: You have not selected the correct operation";
+    }
+
+    if (isset($result)) {
+        echo "<h2> Result: $result</h2>";
+    }
 }
 ?>
 

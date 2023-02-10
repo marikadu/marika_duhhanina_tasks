@@ -1,7 +1,7 @@
 <?php
 
 $servername = "db";
-$username = "capp1";
+$username = "wordpress2";
 $password = "password";
 $dbname = "capp1";
 

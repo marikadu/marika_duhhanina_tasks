@@ -38,7 +38,7 @@ d) descending order sort by Key<br></p>
 
 <p>a)</p>
 <?php
-$courses3=array("PHP" =>"five", "HTML"=>"four", "JavaScript"=>"five", "CMS"=>"two", "Project"=>"one");
+$courses3=array("PHP" =>"1", "HTML"=>"2", "JavaScript"=>"3", "CMS"=>"4", "Project"=>"5");
 asort ($courses3);
 foreach ($courses3 as $c =>$c_value){
     echo "Course: " . $c . " Grade: " . $c_value . "<br>";}
@@ -46,7 +46,7 @@ foreach ($courses3 as $c =>$c_value){
 
 <p>b)</p>
 <?php
-$courses3=array("PHP" =>"five", "HTML"=>"four", "JavaScript"=>"five", "CMS"=>"two", "Project"=>"one");
+$courses3=array("PHP" =>"1", "HTML"=>"2", "JavaScript"=>"3", "CMS"=>"4", "Project"=>"5");
 ksort ($courses3);
 foreach ($courses3 as $c =>$c_value){
     echo "Course: " . $c . " Grade: " . $c_value . "<br>";}
@@ -54,7 +54,7 @@ foreach ($courses3 as $c =>$c_value){
 
 <p>c)</p>
 <?php
-$courses3=array("PHP" =>"five", "HTML"=>"four", "JavaScript"=>"five", "CMS"=>"two", "Project"=>"one");
+$courses3=array("PHP" =>"1", "HTML"=>"2", "JavaScript"=>"3", "CMS"=>"4", "Project"=>"5");
 arsort ($courses3);
 foreach ($courses3 as $c =>$c_value){
     echo "Course: " . $c . " Grade: " . $c_value . "<br>";}
@@ -62,7 +62,7 @@ foreach ($courses3 as $c =>$c_value){
 
 <p>d)</p>
 <?php
-$courses3=array("PHP" =>"five", "HTML"=>"four", "JavaScript"=>"five", "CMS"=>"two", "Project"=>"one");
+$courses3=array("PHP" =>"1", "HTML"=>"2", "JavaScript"=>"3", "CMS"=>"4", "Project"=>"5");
 KRSORT ($courses3);
 foreach ($courses3 as $c =>$c_value){
     echo "Course: " . $c . " Grade: " . $c_value . "<br>";}

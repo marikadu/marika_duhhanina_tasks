@@ -16,10 +16,10 @@ include "../header.php"; ?>
 
 <?php
 if (isset($_POST['submit'])) {
-    $fname= $_POST['fname'];
-    $lname= $_POST['lname'];
-    $city= $_POST['city'];
-    $groupid= $_POST['groupid'];
+    $fname = $_POST['fname'];
+    $lname = $_POST['lname'];
+    $city = $_POST['city'];
+    $groupid = $_POST['groupid'];
 
     include 'db.php';
     $sql="insert into studentsinfo (fname, lname, city, groupid)

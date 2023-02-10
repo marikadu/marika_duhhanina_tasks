@@ -1,9 +1,9 @@
 <?php
 
-$servername = "webprog23_db_1";
-$username = "app1";
+$servername = "db";
+$username = "capp1";
 $password = "password";
-$dbname = "app1";
+$dbname = "capp1";
 
 // creating connection
 $conn = new mysqli ($servername, $username, $password, $dbname);

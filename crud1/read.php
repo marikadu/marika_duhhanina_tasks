@@ -19,7 +19,7 @@ if ($result -> num_rows > 0) {
     while($row = $result -> fetch_assoc()){
     echo "
         <tr>
-        <th>$row[id]</th>
+        <th><a href = 'updatesingle.php?id=$row[id]'$row[id]'</a></th>
         <th>$row[fname]</th>
         <th>$row[lname]</th>
         <th>$row[city]</th>

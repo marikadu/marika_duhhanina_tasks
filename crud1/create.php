@@ -9,6 +9,7 @@ include "../layout/header.php"; ?>
         <option value="BBCAP22"> BBCAP22 </option>
         <option value="BBCAP23"> BBCAP23 </option>
         <option value="BBCAP24"> BBCAP24 </option>
+        <option value="BBCAP24"> Others </option>
     </select>
     <input type="submit" value="Submit" name="submit">
 

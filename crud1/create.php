@@ -2,9 +2,9 @@
 include "../layout/header.php"; ?>
 
 <form method="post" action="">
-    <input type="text" name="fname" placeholder="First Name" required> <br>
-    <input type="text" name="lname" placeholder="Last Name" required><br>
-    <input type="text" name="city" placeholder="City" required><br>
+    <input type="text" name="fname" placeholder="First Name" required> <br><br>
+    <input type="text" name="lname" placeholder="Last Name" required><br><br>
+    <input type="text" name="city" placeholder="City" required><br><br>
     <select name="groupid">
         <option value="BBCAP22"> BBCAP22 </option>
         <option value="BBCAP23"> BBCAP23 </option>

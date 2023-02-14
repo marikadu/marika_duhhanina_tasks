@@ -2,7 +2,7 @@
 include "../layout/header.php"; 
 include 'db.php';
 $a = $_GET['id'];
-$result = mysqli_query($conn, "Select * from studentinfo where id = '$a' ");
+$result = mysqli_query($conn, "SELECT * from studentinfo where id='$a' ");
 $row = mysqli_fetch_array($result);
 
 ?>
@@ -17,10 +17,56 @@ $row = mysqli_fetch_array($result);
         <option value="BBCAP23"> BBCAP23 </option>
         <option value="BBCAP24"> BBCAP24 </option>
         <option value="BBCAP24"> Others </option>
-    </select>
-    <input type="update" value="Update Your Info" name="submit"><br><br>
-    <input type="delete" value="Delete Your Info" name="submit"><br><br>
+    </select> <br><br>
+    <input type="submit" value="Update Your Info" name="submit"><br><br>
+    <input type="submit" value="Delete Your Info" name="submit"><br><br>
 
 </form>
+
+<!--make update button work and update data-->
+<?php if (isset($_POST['update'])){
+    $fname = $_POST['fname'];
+    $lname = $_POST['lname'];
+    $city = $_POST['city'];
+    $groupid = $_POST['groupid'];
+    $query = mysqli_query($conn, "UPDATE studentinfo set 
+    fname = '$fname', 
+    lname = '$lname',
+    city = '$city',
+    groupid = '$groupid'
+    where id='$a' ");
+
+    if($query) {
+        echo "<h2> Your information is updated successfully </h2>";
+    }
+
+    else {
+        echo "<h2> Record is not modified </h2>";
+    }
+}
+?>
+
+<!--make delete button work and delete data-->
+<?php if (isset($_POST['delete'])){
+    $fname = $_POST['fname'];
+    $lname = $_POST['lname'];
+    $city = $_POST['city'];
+    $groupid = $_POST['groupid'];
+    $query = mysqli_query($conn, "DELETE studentinfo set 
+    fname = '$fname', 
+    lname = '$lname',
+    city = '$city',
+    groupid = '$groupid'
+    where id='$a' ");
+
+    if($query) {
+        echo "<h2> Your information is updated successfully </h2>";
+    }
+
+    else {
+        echo "<h2> Record is not modified </h2>";
+    }
+}
+?>
 
 <?php include "../layout/footer.php"; ?>

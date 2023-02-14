@@ -1,9 +1,9 @@
 <?php
 
 $servername = "db";
-$username = "wordpress2";
+$username = "root";
 $password = "password";
-$dbname = "capp1";
+$dbname = "studentinfo";
 
 // creating connection
 $conn = new mysqli ($servername, $username, $password, $dbname);

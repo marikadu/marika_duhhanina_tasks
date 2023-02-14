@@ -1,5 +1,5 @@
 <?php $title = "A simple CRUD app";
-include "../header.php"; ?>
+include "../layout/header.php"; ?>
 
 <form method="post" action="">
     <input type="text" name="fname" placeholder="First Name" required> <br>
@@ -22,7 +22,7 @@ if (isset($_POST['submit'])) {
     $groupid = $_POST['groupid'];
 
     include 'db.php';
-    $sql="insert into studentsinfo (fname, lname, city, groupid)
+    $sql="insert into studentinfo (fname, lname, city, groupid)
     values('$fname', '$lname', '$city', '$groupid')";
 
     if($conn -> query($sql) === TRUE) {
@@ -35,4 +35,4 @@ if (isset($_POST['submit'])) {
 
 ?>
 
-<?php include "../footer.php"; ?>
+<?php include "../layout/footer.php"; ?>

@@ -75,6 +75,22 @@ echo "<table>
 <h1>4 Screenshot</h1>
 <img src="docker.png">
 
+<input type="button" onclick="hello()" value="Click Me">
+<script>
+document.write("Hello this is interesting");
+</script>
+
+<hr>
+<p id="place1"> </p>
+<script>
+    document.getElementById("place1").innerHTML = "This will go to place1";
+    document.getElementById("place2").innerHTML = "This will go to spam";
+</script>
+
+<h2> Change Background Colour <h2>
+<form>
+</form>
+
 <?php include "footer.php"; ?>
 
 </body>

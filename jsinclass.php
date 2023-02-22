@@ -26,7 +26,7 @@ include "header.php"?>
 <span onmouseover="this.style.color='blue';
                 this.style.backgroundColour='yellow';
                 this.style.fontSize='2em';" 
-                onmouseout="
+    onmouseout="
                 this.style.color='green';
                 this.style.backgroundColour='aqua';
                 this.style.fontSize='3em';" >

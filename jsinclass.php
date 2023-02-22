@@ -29,11 +29,12 @@ include "header.php"?>
                 onmouseout="
                 this.style.color='green';
                 this.style.backgroundColour='aqua';
-                this.style.fontSize='3em';" 
-                
-                
-                
-                > Some text </span>
+                this.style.fontSize='3em';" >
+Some text </span>
+
+<span id="mo" onmouseover = "onm()" onmouseout="ono()"> Hello World </span>
+
+<h2>JavaScript Form Validation</h2>
 
     
 

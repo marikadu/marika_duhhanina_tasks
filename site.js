@@ -19,3 +19,12 @@ function changeBackgroundColour(where, newColour){
     document.body.style.color = color
     
 }
+
+//crud
+function crud(){
+    let fname=(document.form1.fname.value).trim();
+    if (fname.length<5){
+        alert("First name must be more than 5 characters");
+        return false;
+    }
+}

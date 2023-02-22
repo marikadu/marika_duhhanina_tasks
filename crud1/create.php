@@ -29,7 +29,7 @@ if (isset($_POST['submit'])) {
     if($conn -> query($sql) === TRUE) {
         echo "New record added";}
     else {
-      echo "Error: " . $sql . "<br>" . $conn -> error;}
+      echo "Error: " . $sql . "<br>" . $conn -> $error;}
 
     $conn -> close();
 }

@@ -80,15 +80,18 @@ echo "<table>
 document.write("Hello this is interesting");
 </script>
 
+<button onclick="add()">Click to Add </button>
 <hr>
-<p id="place1"> </p>
+<p id="place1" style="color:red; background-color:yellow;"> </p>
+<span id="place2" style="color:blue; background-color:grey;"> </span>
 <script>
     document.getElementById("place1").innerHTML = "This will go to place1";
-    document.getElementById("place2").innerHTML = "This will go to spam";
+    document.getElementById("place2").innerHTML = "This will go to span";
 </script>
 
 <h2> Change Background Colour <h2>
 <form>
+    <input type="colour" name="background" onchange="changeColour('background', this.value)">
 </form>
 
 <?php include "footer.php"; ?>
